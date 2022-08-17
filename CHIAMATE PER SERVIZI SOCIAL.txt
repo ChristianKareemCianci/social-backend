@@ -1,0 +1,17 @@
+﻿CHIAMATE PER SERVIZI SOCIAL
+
+
+USERS (/api/users/..)
+
+
+GET /all → ritorna array con tutti gli utenti
+GET /{email} → ritorna array con tutti gli utenti con una data email (controllo: non ci si può registrare con una mail già presente nel db)
+POST /login → controlla se c’è un utente con quella mail: se c’è torna quell’utente, altrimenti null
+POST /save → salva l’utente
+
+
+MESSAGES (/api/messages/..)
+
+
+POST /save → salva un messaggio
+GET /{fromUser}/{toUser} → ti trova un messaggio a partire da chi lo ha inviato e chi lo ha ricevuto
