@@ -1,5 +1,10 @@
 ﻿CHIAMATE PER SERVIZI SOCIAL
 
+AUTHENTICATION
+
+POST /registration --> salva l'utente nel db con pass criptata
+POST /authenticate --> ritorna un token se l'utente è autenticato
+
 
 USERS (/api/users/..)
 

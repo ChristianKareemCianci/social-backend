@@ -57,7 +57,6 @@ public class JwtAuthenticationController {
             return ResponseEntity.ok(new JwtResponse(token));
 
         } catch (Exception e) {
-            e.printStackTrace();
             throw new Exception();
         }
     }
@@ -79,7 +78,6 @@ public class JwtAuthenticationController {
                 logger.warn(">>> User already exists!!");
                 throw new Exception("User already exists!");
             }
-
 
     }
 
