@@ -1,13 +1,13 @@
-package com.example.chiara.service;
+package com.example.users.service;
 
-import com.example.chiara.entity.UserDto;
+import com.example.users.entity.UserDto;
 
 import java.util.List;
 
 
 public interface UserService {
 
-    void save(UserDto userDto);
+    UserDto save(UserDto userDto);
 
     List<UserDto> findAll();
 
@@ -18,5 +18,4 @@ public interface UserService {
 
     List<UserDto> findUserByEmail(String email);
 
-    List<UserDto> findUserByPassword(String password);
 }

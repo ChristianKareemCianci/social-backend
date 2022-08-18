@@ -1,7 +1,7 @@
-package com.example.chiara.dao;
+package com.example.users.dao;
 
 
-import com.example.chiara.entity.User;
+import com.example.users.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -16,6 +16,4 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     List<User> findUserByEmail(String email);
     User findUserById(int theId);
 
-//    da togliere
-    List<User> findUserByPassword(String password);
 }

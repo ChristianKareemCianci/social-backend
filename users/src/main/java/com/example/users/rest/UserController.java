@@ -1,7 +1,7 @@
-package com.example.chiara.rest;
+package com.example.users.rest;
 
-import com.example.chiara.entity.UserDto;
-import com.example.chiara.service.UserService;
+import com.example.users.entity.UserDto;
+import com.example.users.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,12 +36,6 @@ public class UserController {
         return userService.findUserByEmail(email);
     }
 
-    @GetMapping("/password/{password}")
-    public List<UserDto> findUserByPassword(@PathVariable String password) {
-
-        logger.info(">>> Finding user by password " + password);
-        return userService.findUserByPassword(password);
-    }
 
     @PostMapping("/login")
     public UserDto checkUserCredentials(@RequestBody UserDto userDto) {

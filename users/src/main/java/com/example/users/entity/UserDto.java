@@ -1,8 +1,8 @@
-package com.example.chiara.entity;
+package com.example.users.entity;
 
 
 public class UserDto {
-    
+
     private int id;
     private String email;
     private String password;
@@ -22,6 +22,9 @@ public class UserDto {
         this.password = password;
     }
 
+    public void setId() {
+        this.id = id;
+    }
     public int getId() {
         return id;
     }
@@ -43,3 +46,4 @@ public class UserDto {
     }
 
 }
+
